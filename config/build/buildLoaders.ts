@@ -13,6 +13,9 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
       {
         loader: 'file-loader',
       },
+      {
+        loader: 'webp-loader'
+    }
     ],
   };
 
