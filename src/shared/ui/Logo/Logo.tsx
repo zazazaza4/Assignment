@@ -20,6 +20,7 @@ export const Logo: FC<LogoProps> = memo((props: LogoProps) => {
     <AppLink
       to={getRouteMain()}
       className={classNames(cls.Logo, {}, [className])}
+      aria-label="Homepage"
     >
       <LogoImg />
     </AppLink>
