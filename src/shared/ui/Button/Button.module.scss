@@ -1,0 +1,46 @@
+.Button {
+  cursor: pointer;
+  color: var(--primary-color);
+  outline: none;
+  border: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-black-200);
+  width: 100%;
+  border-radius: 80px;
+
+  &:hover {
+    background-color: var(--color-yellow-100);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.disabled {
+  cursor: default;
+  color: var(--color-white);
+  background-color: var(--color-gray-100);
+
+  &:hover {
+    background-color: var(--color-gray-100);
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.size_m {
+  width: 100px;
+  height: 34px;
+}
+
+.size_l {
+  width: 120px;
+  height: 34px;
+}
