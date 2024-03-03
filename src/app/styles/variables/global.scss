@@ -1,0 +1,43 @@
+:root {
+  // colors
+  --color-white: rgb(255 255 255);
+  --color-black: rgb(0 0 0);
+  --color-black-100: rgb(0 0 0 / 25%);
+  --color-black-200: rgb(0 0 0 / 87%);
+  --color-primary: rgb(244 244 65);
+  --color-secondary: rgb(0 189 211);
+  --color-bg: rgb(248 248 248);
+  --color-yellow-100: rgb(255 227 2);
+  --color-gray-100: rgb(180 180 180);
+  --color-gray-200: rgb(208 207 207);
+  --color-gray-300: rgb(126 126 126);
+  --color-red-100: rgb(203 61 64);
+
+  // skeleton
+  --skeleton-shadow: rgb(244 244 65);
+  --skeleton-color: white;
+
+  // fonts
+  --font-family: "Nunito", sans-serif;
+
+  // s
+  --font-size-s: 12px;
+  --font-line-s: 14px;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family);
+
+  // m
+  --font-size-m: 16px;
+  --font-line-m: 26px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family);
+
+  // xl
+  --font-size-xl: 40px;
+  --font-line-xl: 40px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family);
+
+  // header
+  --navbar-height: 60px;
+
+  // container
+  --container-width: 1170px;
+}
