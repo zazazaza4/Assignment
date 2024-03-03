@@ -1,0 +1,13 @@
+.Card {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.normal {
+  background: var(--color-white);
+  box-shadow: 0 10px 60px rgb(226 236 249 / 50%);
+}
+
+.max {
+  width: 100%;
+}
