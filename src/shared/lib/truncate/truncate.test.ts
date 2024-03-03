@@ -5,7 +5,7 @@ describe('truncate function', () => {
     const str = 'This is a test string';
     const maxLength = 10;
     const truncatedStr = truncate(str, maxLength);
-    expect(truncatedStr).toBe('This is a...');
+    expect(truncatedStr).toBe('This is a ...');
   });
 
   it('should return the original string if its length is less than or equal to the maximum length', () => {

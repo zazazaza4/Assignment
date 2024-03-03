@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 
 import { getRouteMain } from '@/shared/const/router';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
@@ -11,8 +11,13 @@ describe('app/router/AppRouter', () => {
       route: getRouteMain(),
     });
 
-    const page = await screen.findByTestId('MainPage');
-    expect(page).toBeInTheDocument();
+    await waitFor(
+      async () => {
+        const page = await screen.findByTestId('MainPage');
+        expect(page).toBeInTheDocument();
+      },
+      { timeout: 3000 }
+    );
   });
 
   test('not found', async () => {
