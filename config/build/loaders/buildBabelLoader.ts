@@ -20,13 +20,6 @@ export function buildBabelLoader({ isDev, isTsx }: BuildBabelLoaderProps): webpa
         presets: ['@babel/preset-env'],
         plugins: [
           [
-            'i18next-extract',
-            {
-              locales: ['urk', 'en'],
-              keyAsDefaultValue: true,
-            },
-          ],
-          [
             '@babel/plugin-transform-typescript',
             {
               isTsx,
