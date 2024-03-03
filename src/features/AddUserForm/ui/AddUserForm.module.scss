@@ -1,0 +1,14 @@
+.AddUserForm {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media only screen and (max-width: 768px) {
+    width: 320px;
+  }
+}
+
+.btn {
+  margin: 0 auto;
+}
