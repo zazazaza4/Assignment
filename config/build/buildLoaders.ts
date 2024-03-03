@@ -8,14 +8,15 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
   const { isDev } = options;
 
   const fileLoader: webpack.RuleSetRule = {
-    test: /\.(png|jpe?g|webp|gif|woff2|woff)$/i,
+    test: /\.(png|jpe?g|woff)$/i,
     use: [
       {
         loader: 'file-loader',
-      },
-      {
-        loader: 'webp-loader'
-    }
+        options: {
+          outputPath: 'images/',
+          generator: undefined, 
+        }
+      }
     ],
   };
 
@@ -28,12 +29,6 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
   const tsxCodeBabelLoader = buildBabelLoader({ ...options, isTsx: true });
 
   const cssLoader: webpack.RuleSetRule = buildCssLoader(isDev);
-
-  // const typescriptLoader: webpack.RuleSetRule = {
-  //   test: /\.tsx?$/,
-  //   use: 'ts-loader',
-  //   exclude: /node_modules/,
-  // };
 
   return [
     fileLoader,
