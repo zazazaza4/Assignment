@@ -1,0 +1,21 @@
+.UserListItem {
+  width: 370px;
+  height: 254px;
+
+  @media screen and (width <= 1290px) {
+    width: 282px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 344px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 328px;
+  }
+}
+
+.content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
