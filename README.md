@@ -139,8 +139,8 @@ export const Clear: Story = {
 
 ### Features
 
-- [AccessByEmail](/src/features/AddUserForm)
-- [DownloadAnswers](/src/features/StaffList)
+- [AddUserForm](/src/features/AddUserForm)
+- [StaffList](/src/features/StaffList)
 
 #### [Документація з Features](/docs/features.md)
 
