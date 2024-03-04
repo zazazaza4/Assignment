@@ -125,7 +125,7 @@ export const Clear: Story = {
 Конфігурація дій GitHub розташована в /.github/workflows.
 У CI виконуються всі види тестів, збірка проекту та сторібука, лінтинг.
 
-Також генерується звіт для unit-тестів та скріншотних тестів, який можна переглянути за посиланням: [https://zazazaza4.github.io/quiz-react/](https://zazazaza4.github.io/quiz-react/).
+Також генерується звіт для unit-тестів та скріншотних тестів, який можна переглянути за посиланням: [https://zazazaza4.github.io/Assignment/](https://zazazaza4.github.io/Assignment/).
 
 ---
 
